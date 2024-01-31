@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  table
+    thead
+      tr: th UserID 
+          th Rating 
+          th DeviceID 
+          th DateTime 
+    tbody
+      each item in resp.data
+        tr: td #{item.UserID}
+            td #{item.Rating}
+            td #{item.DateTime}
